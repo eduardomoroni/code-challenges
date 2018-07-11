@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.backgroundColor {
+  background-color: rgba(51, 170, 51, .1);
+}
+
+.review-list-container {
+  height: 65vh;
+  overflow-y: auto;
+}

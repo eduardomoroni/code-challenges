@@ -1,0 +1,28 @@
+{
+  "name": "backend-proxy",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/server.js",
+    "docker:start": "sh scripts/docker.sh",
+    "dev": "nodemon ./src/server.js",
+    "prettier": "prettier --write 'src/**/*.js'"
+  },
+  "dependencies": {
+    "axios": "0.18.0",
+    "cors": "2.8.4",
+    "debug": "2.6.9",
+    "express": "4.16.0",
+    "http-errors": "1.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "1.12.1",
+    "prettier": "1.11.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "__test__/*"
+    ],
+    "delay": "2500"
+  }
+}
