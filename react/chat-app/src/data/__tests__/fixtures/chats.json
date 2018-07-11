@@ -1,0 +1,48 @@
+[
+  {
+    "id": "69905e0c-a901-56cd-865f-9b6ee118481f",
+    "type": "chat",
+    "requested_by": "mike@example.com",
+    "initial_message": "Brace yourselves gentlemen. According to the gas chromatograph, the secret ingredient is… Love!? ",
+    "created_at": 1420389094947,
+    "page_url": "http://www.awesome3ftcakes.com/index.html",
+    "referrer_url": "http://www.bing.com/search?q=wigoru",
+    "entry_url": "http://www.awesome3ftcakes.com/menu.html",
+    "ip_address": "223.224.139.178",
+    "user_agent": "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_0)  AppleWebKit/537.2.1 (KHTML, like Gecko) Chrome/22.0.847.0 Safari/537.2.1",
+    "latitude": 40.014986,
+    "longitude": -105.270546,
+    "chat_waittime": 3,
+    "chat_duration": 1668,
+    "survey_score": 90,
+    "language_code": "en-us,en;q=0.5",
+    "transcript": [
+      {
+        "date": 1420389094947,
+        "alias": "Mike",
+        "message": "Brace yourselves gentlemen. According to the gas chromatograph, the secret ingredient is… Love!? "
+      },
+      {
+        "id": "jenny@awesome3ftcakes.com",
+        "date": 1420390228676,
+        "alias": "Jenny",
+        "message": "Spare me your space age technobabble, Attila the Hun!"
+      }
+    ]
+  },
+  {
+    "id": "9607a031-5730-5ad4-acd8-9455de4982ae",
+    "type": "offline",
+    "requested_by": "homer@example.com",
+    "initial_message": "Is any of this getting through to you?",
+    "created_at": 1419482873250,
+    "page_url": "http://www.awesome3ftcakes.com",
+    "referrer_url": "http://search.yahoo.com/search?p=abforu",
+    "entry_url": "http://www.awesome3ftcakes.com",
+    "ip_address": "200.144.238.31",
+    "user_agent": "Mozilla/5.0 (Windows; U; Windows NT 6.3) AppleWebKit/537.2.0 (KHTML, like Gecko) Chrome/35.0.845.0 Safari/537.2.0",
+    "latitude": 55.669217,
+    "longitude": 12.402144,
+    "language_code": "en-us,en;q=0.5"
+  }
+]

@@ -1,4 +1,4 @@
-const { someFunction, someAsyncFunction } = require("../index");
+const { someFunction, someAsyncFunction } = require("./index");
 
 describe("foo", () => {
   it("should say bar", () => {
