@@ -1,4 +1,4 @@
-# snapengage code assignment
+# code assignment
 ## Running
 - npm install
 - npm start
