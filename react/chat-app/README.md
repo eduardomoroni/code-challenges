@@ -1,4 +1,4 @@
-# snapengage code assignment
+# code assignment
 ## Running
 - npm install
 - npm start
@@ -29,15 +29,15 @@ It would also try to add the possibility of the user being able to respond.
 Reading this section is optional, if you want to better understand some of the decisions I made, I think it'll be interesting.
 
 ### Folder Structure
-During the conversation with Jerome, he commented that you are in the process of migrating a Backbone codebase to React. This movement is very common today, and I believe that for some time now there will be
-the same migration to another technology that will emerge. Based on this I studied [Clean Architecture] (https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164) that in my view
+During the conversation with engineer, he commented that you are in the process of migrating a Backbone codebase to React. This movement is very common today, and I believe that for some time now there will be
+the same migration to another technology that will emerge. Based on this I studied [Clean Architecture](https://www.amazon.com/Clean-Architecture-Craftsmans-Software-Structure/dp/0134494164) that in my view
 is an architectural standard that fits well with agile development. He preaches the complete separation of domain logic, presentation logic, and data logic. It is worth mentioning that I made a very simplistic adaptation
-well away from a case that could be used on a codebase that would go into production. And I adopted Model-View-Presenter as a way to adapt [smart and dumb components] (https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
+well away from a case that could be used on a codebase that would go into production. And I adopted Model-View-Presenter as a way to adapt [smart and dumb components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
 with a standard of the market.
 
 ### Using JS Objects
-This is a polemic point in JS, I know. But I accepted the risk. Unfortunately, I fell into an anti-pattern known as [Anemic domain model] (https://martinfowler.com/bliki/AnemicDomainModel.html).
-Lately, I've been looking for ways to express better through the code, without losing the speed and flexibility that JS provides. Two tools that helps me are [flow] (https://flow.org/en/) and TDD (when applicable).
+This is a polemic point in JS, I know. But I accepted the risk. Unfortunately, I fell into an anti-pattern known as [Anemic domain model](https://martinfowler.com/bliki/AnemicDomainModel.html).
+Lately, I've been looking for ways to express better through the code, without losing the speed and flexibility that JS provides. Two tools that helps me are [flow](https://flow.org/en/) and TDD (when applicable).
 Using flow brings several benefits, and some trade-offs. If I represented domain entities as a data structure, I would still have to define the type. Between defining the type and declaring a class I decided to declare classes. That simple.
 
 ### Ugly interface

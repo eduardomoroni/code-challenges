@@ -1,7 +1,7 @@
 # Product review app
 WIP: I'll finish this README ASAP, I didn't have enough time to finish this exercise the way I'd like to.
 
-![gif](https://github.com/eduardomoroni/product-review-challenge/blob/master/docs/product-review-demo.gif)  
+![gif](https://github.com/eduardomoroni/code-challenges/blob/master/react/product-review/docs/product-review-demo.gif)  
 
 # Running
 Make sure you run `npm install` on both root folder and `./static-server`, then starts both apps.
