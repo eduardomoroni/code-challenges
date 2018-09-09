@@ -12,33 +12,22 @@ const SegmentedControlButton = (props) => {
   );
 };
 
-const SegmentedControlOption = (props) => {
-  const isSelected = props.selectedValue === props.value;
-  return (
-    <option value={props.value}
-            selected={isSelected}>{props.text}</option>
-  );
-};
-
-const SegmentedControlItem = () => (
-  <Fragment/>
-);
+const SegmentedControlOption = (props) => <option value={props.value}>{props.text}</option>;
 
 export class SegmentedControl extends Component {
-  static Item = SegmentedControlItem;
+  static Item = () => <Fragment/>;
   state = {
     selectedValue: "1",
   };
 
   updateSelectedValue = (e, value) => {
     e.preventDefault();
-    this.setState({selectedValue: value});
+    this.setState({selectedValue: value || e.target.value});
   };
 
-  toRow = ({props}) => <SegmentedControlButton {...props} selectedValue={this.state.selectedValue}
-                                               onClick={this.updateSelectedValue}/>;
-  toOption = (element) => (<SegmentedControlOption {...element.props} selectedValue={this.state.selectedValue}
-                                                   onClick={this.updateSelectedValue}/>);
+  mapProps = (props) => ({ ...props,  selectedValue: this.state.selectedValue, onClick: this.updateSelectedValue });
+  toRow = ({props}) => <SegmentedControlButton {...this.mapProps(props)} />;
+  toOption = ({props}) => <SegmentedControlOption {...this.mapProps(props)} />;
 
   render() {
     const {children} = this.props;
@@ -47,7 +36,7 @@ export class SegmentedControl extends Component {
         <div className="segmented-control__row">
           {React.Children.map(children, this.toRow)}
         </div>
-        <select className="segmented-control__select">
+        <select className="segmented-control__select" value={this.state.selectedValue} onChange={this.updateSelectedValue}>
           {React.Children.map(children, this.toOption)}
         </select>
       </div>
