@@ -3,7 +3,8 @@
 import {
   changeGroupingAction,
   CHANGE_GROUPING,
-  groupByReducer, groupBySelector,
+  groupByReducer,
+  groupBySelector,
 } from "../groupingReducer";
 
 describe("Review dux", () => {
@@ -12,7 +13,7 @@ describe("Review dux", () => {
     const action = changeGroupingAction(groupBy);
     const expectedAction = {
       type: CHANGE_GROUPING,
-      groupBy
+      groupBy,
     };
 
     expect(action).toEqual(expectedAction);
@@ -22,7 +23,7 @@ describe("Review dux", () => {
     const groupBy = "DAY";
 
     const state = groupByReducer("MONTH", changeGroupingAction(groupBy));
-    expect(state).toEqual(groupBy)
+    expect(state).toEqual(groupBy);
   });
 
   it("selects groupBy", () => {

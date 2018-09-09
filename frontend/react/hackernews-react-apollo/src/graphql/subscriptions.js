@@ -1,10 +1,8 @@
-import { gql } from 'react-apollo'
+import { gql } from "react-apollo";
 
 export const NEW_LINKS_SUBSCRIPTION = gql`
   subscription {
-    Link(filter: {
-      mutation_in: [CREATED]
-    }) {
+    Link(filter: { mutation_in: [CREATED] }) {
       node {
         id
         url
@@ -23,35 +21,33 @@ export const NEW_LINKS_SUBSCRIPTION = gql`
       }
     }
   }
-`
+`;
 
 export const VOTE_SUBSCRIPTION = gql`
-subscription {
-  Vote(filter: {
-    mutation_in: [CREATED]
-  }) {
-    node {
-      id
-      link {
+  subscription {
+    Vote(filter: { mutation_in: [CREATED] }) {
+      node {
         id
-        url
-        description
-        createdAt
-        postedBy {
+        link {
           id
-          name
-        }
-        votes {
-          id
-          user {
+          url
+          description
+          createdAt
+          postedBy {
             id
+            name
+          }
+          votes {
+            id
+            user {
+              id
+            }
           }
         }
-      }
-      user {
-        id
+        user {
+          id
+        }
       }
     }
   }
-}
-`
+`;
