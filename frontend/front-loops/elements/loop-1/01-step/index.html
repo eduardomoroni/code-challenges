@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>Segmented control</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="segmented-control js-segmented-control">
+            <div class="segmented-control__row">
+                <button class="segmented-control__button segmented-control__button--active js-segmented-control__button" data-value="1">Sort by price</button><!--
+                --><button class="segmented-control__button js-segmented-control__button" data-value="2">Sort by name</button><!--
+                --><button class="segmented-control__button js-segmented-control__button" data-value="3">Sort by relevance</button>
+            </div>
+
+            <select class="segmented-control__select js-segmented-control__select">
+                <option value="1">Sort by price</option>
+                <option value="2">Sort by name</option>
+                <option value="3">Sort by relevance</option>
+            </select>
+        </div>
+    </div>
+    <script src="index.js" />
+</body>
+</html>

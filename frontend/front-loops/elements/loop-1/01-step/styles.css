@@ -1,0 +1,68 @@
+body {
+    background: #74b9ff;
+    font-size: 14px;
+}
+
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #dedede;
+    background: #fff;
+    border-radius: 4px;
+    width: 400px;
+    margin: 100px auto 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+.segmented-control__button {
+    border: 2px solid #5896ff;
+    border-left: 0;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    background: #fff;
+}
+
+.segmented-control__button:hover {
+    background: rgba(88, 150, 225, 0.2)
+}
+
+.segmented-control__button:first-child {
+    border-left: 2px solid #5896ff;
+    border-radius: 4px 0 0 4px;
+}
+
+.segmented-control__button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.segmented-control__button--active,
+.segmented-control__button--active:hover {
+    background: #5896ff;
+    color: #fff;
+}
+
+.segmented-control__select {
+    width: 100%;
+    border: 2px solid #5896ff;
+    background: transparent;
+    height: 36px;
+    display: none;
+}
+
+.segmented-control__button:focus,
+.segmented-control__select:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(88, 150, 225, 0.4);
+    z-index: 2;
+}
+
+@media screen and (max-width: 500px) {
+    .segmented-control__row {
+        display: none;
+    }
+
+    .segmented-control__select {
+        display: block;
+    }
+}
