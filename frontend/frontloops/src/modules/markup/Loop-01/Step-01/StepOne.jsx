@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 
-import {Centered} from "../../../layout/Centered";
-import {Card} from "./Card";
+import { Centered } from "../../../layout/Centered";
+import { Card } from "./Card";
 
 import DeviceImg from "./img/device.svg";
 import LaptopImg from "./img/laptop.svg";

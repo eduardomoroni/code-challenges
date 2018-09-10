@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import "./App.css";
-import { StepOne } from "./modules/elements/Loop-01/Step-01/StepOne";
+import { StepTwo } from "./modules/elements/Loop-01/Step-02/StepTwo";
 
 class App extends Component {
   render() {
-    return <StepOne />;
+    return <StepTwo />;
   }
 }
 

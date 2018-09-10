@@ -4,7 +4,7 @@ import { shallow } from "enzyme";
 import React from "react";
 import { Review } from "../../../domain/entity/review";
 import { ReviewComponent } from "../reviewComponent";
-import BackendReview from "../../../data/__tests__/static/backendReview"
+import BackendReview from "../../../data/__tests__/static/backendReview";
 
 const props = {
   review: new Review(BackendReview),

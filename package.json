@@ -6,7 +6,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "precommit": "lint-staged",
-    "prettier": "prettier --write '**/*.js'"
+    "prettier": "prettier --write '**/*.{js,jsx}'"
   },
   "author": "eduardomoroni",
   "license": "ISC",

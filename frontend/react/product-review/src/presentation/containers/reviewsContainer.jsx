@@ -79,7 +79,6 @@ const mapDispatchToProps = {
   fetchMore: fetchMoreAction,
 };
 
-export const ReviewsContainer = connect(
-  mapStateToProps,
-  mapDispatchToProps,
-)(ReviewsComponent);
+export const ReviewsContainer = connect(mapStateToProps, mapDispatchToProps)(
+  ReviewsComponent,
+);
