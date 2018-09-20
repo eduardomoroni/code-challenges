@@ -1,0 +1,24 @@
+.dots {
+  display: block;
+}
+
+.dot {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.dot.current::after {
+  background: #AAAAAA;
+}
+
+.dot::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background: #DEDEDE;
+}
+

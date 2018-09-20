@@ -2,3 +2,13 @@
   width: 900px;
   margin: 100px auto;
 }
+
+.centered-frame {
+  overflow: hidden;
+  margin: 10% auto;
+  padding-top: 1.5em;
+  width: 40vw;
+  background: white;
+  border-radius: 5px;
+  text-align: center;
+}
