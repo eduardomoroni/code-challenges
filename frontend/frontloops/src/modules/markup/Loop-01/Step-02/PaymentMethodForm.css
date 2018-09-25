@@ -1,0 +1,61 @@
+.payment-form {
+    text-align: left;
+    font-weight: 600;
+}
+
+.payment-form__input {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.payment-form__input-label {
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    border-top: 1px solid #E2E2E2;
+    padding: 2.5rem 0 2.5rem 6.5rem;
+    position: relative;
+}
+
+.payment-form__input-label:focus {
+    outline: none;
+}
+
+.payment-form__input-label::before {
+    content: "";
+    left: 1rem;
+    width: 4rem;
+}
+
+.payment-form__input-label::before,
+.checkmark {
+    position: absolute;
+    top: 0;
+    height: 7rem;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+input:checked + .payment-form__input-label > .checkmark {
+    background-image: url("./img/check.svg");
+}
+
+.checkmark {
+    right: 1em;
+    width: 2rem;
+}
+
+/*TODO: I'm not happy with this*/
+#Visa-label::before {
+    background-image: url("./img/visa.svg");
+}
+
+#Maestro-label::before {
+    background-image: url("./img/maestro.svg");
+}
+
+#MasterCard-label::before {
+    background-image: url("./img/mastercard.svg");
+}
