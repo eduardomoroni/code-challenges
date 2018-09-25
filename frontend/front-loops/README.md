@@ -1,2 +1,0 @@
-# Frontloops
-## https://frontloops.io/
