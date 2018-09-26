@@ -29,6 +29,9 @@ export class PaymentMethodForm extends React.PureComponent {
     return (
       <form className="payment-form">
         {React.Children.map(children, child => <Method {...child.props} />)}
+        <a href={null} className="payment-form__button">
+          Next step
+        </a>
       </form>
     );
   }

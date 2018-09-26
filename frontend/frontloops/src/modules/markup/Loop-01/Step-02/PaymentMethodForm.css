@@ -16,6 +16,15 @@
     border-top: 1px solid #E2E2E2;
     padding: 2.5rem 0 2.5rem 6.5rem;
     position: relative;
+    color: rgb(189, 183, 177);
+}
+
+input:checked + .payment-form__input-label {
+    color: black;
+}
+
+.payment-form__input-label:hover {
+    background-color: #F1F1F1;
 }
 
 .payment-form__input-label:focus {
@@ -45,6 +54,34 @@ input:checked + .payment-form__input-label > .checkmark {
 .checkmark {
     right: 1em;
     width: 2rem;
+}
+
+.payment-form__button {
+    display: block;
+    width: 100%;
+    padding: 1.5em 0;
+    color: white;
+    background-color: #5B8DDA;
+    text-decoration: none;
+    text-align: center;
+    border-bottom-right-radius: inherit;
+    border-bottom-left-radius: inherit;
+}
+
+.payment-form__button:hover {
+    background-color: #6490EC;
+}
+.payment-form__button::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: .3em;
+    margin-bottom: -.2em;
+    background: url("./img/arrow.svg");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 /*TODO: I'm not happy with this*/
