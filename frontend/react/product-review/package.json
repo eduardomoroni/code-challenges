@@ -16,7 +16,7 @@
   "dependencies": {
     "axios": "0.18.0",
     "concurrently": "^3.6.0",
-    "lodash": "4.17.10",
+    "lodash": "4.17.19",
     "moment": "2.22.2",
     "react": "16.4.1",
     "react-dom": "16.4.1",
