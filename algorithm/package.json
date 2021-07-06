@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "watch": "jest --watch"
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^26.1.0"
+    "jest": "27.0.6"
   },
   "dependencies": {}
 }
