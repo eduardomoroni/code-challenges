@@ -9,7 +9,7 @@
     "prettier": "prettier --write 'src/**/*.js'"
   },
   "dependencies": {
-    "axios": "0.18.0",
+    "axios": "0.21.1",
     "cors": "2.8.4",
     "debug": "2.6.9",
     "express": "4.16.0",
